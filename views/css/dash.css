@@ -1,0 +1,181 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+   
+    
+}
+nav{
+   display: flex;
+   color: black;
+   justify-content: space-between;
+   height: 80px;
+   background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+   align-items:center;
+}
+
+
+
+li{
+    list-style: none;
+}
+p{
+    text-transform: capitalize;
+}
+
+.nav_links,p{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px;
+    margin: 0px 25px;
+}
+.li{
+display: flex;
+}
+.nav_links:hover{
+    color: rgb(47, 241, 209) ;
+    cursor: pointer;
+    
+}
+
+.main_box{
+    background-color: #03a664;
+    width: 80%;
+    height: 600px;
+    margin:20px auto ;
+    display: flex;
+    align-items: center;
+}
+.inside_box{
+    display: flex;
+    margin: 0px auto;
+   
+   
+}
+.balance{
+    width:250px;
+    height: 250px;
+    background-color: #FEC629;
+    color: #d6e9ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   margin-right: 5px;
+
+   
+}
+.balance .cash{
+    margin-top:70px ;
+    display: flex;
+    align-self: center;
+    
+    font-size: 2.2rem;
+}
+.name{
+    display: flex;
+    align-items: flex-start;
+    justify-self:flex-end;
+    height: 20px;
+    font-size: 15px;
+    
+}
+.transfer{
+    width:250px;
+    height: 250px;
+    background-color: #d6e9ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px ;
+    transition: 0.2s ease-in;
+
+}
+.tf{
+    color: #1b2e25;
+    font-size: 2rem;
+}
+.mid_box2{
+    margin-left: 5px;
+}
+.min_box1,.mid_box2{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.account,.Deposit,.pin_change,.contact{
+    width: 250px;
+    height: 123px;
+    background-color: #d6e9ef;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    transition: 0.2s ease-in;
+    
+}
+.account p,.Deposit p,.pin_change p,.contact p{
+    color: #1b2e25;
+   
+}
+.mid{
+    text-decoration: none;
+}
+.account:hover,.Deposit:hover,.pin_change:hover,.contact:hover{
+    transform: scale(0.95);
+
+}
+.transfer:hover{
+    transform: scale(0.95);
+    
+}
+.b-w{
+    display: flex;
+}
+@media (max-width:1300px){
+    .inside_box{
+        flex-wrap: wrap;
+      
+       
+    }
+    .mid_box2,.min_box1,.b-w{
+        margin: 5px auto;
+    }
+    
+    
+}
+
+@media (max-width:880px){
+    .min_box1{
+       flex-wrap: wrap;
+       margin-top: 5px;
+    }
+    .mid_box2{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+}
+@media(max-width:700px){
+    .inside_box{
+        margin: 25px;
+        height:fit-content;
+        
+    }
+    .main_box{
+        height: fit-content;
+    }
+    .b-w{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .transfer{
+        margin-top: 5px;
+    }
+    
+    
+}

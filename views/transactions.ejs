@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/transcations.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+
+        <div class="li"> <li>   <a class="nav_links" href="/dashboard"> Home</a> </li>
+            <li>   <a class="nav_links" href="/">Logout </a></li>
+        </div>
+      
+    </nav>
+    <div class="table-wrapper">
+    <table class="fl-table" >
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Account</th>
+            <th>Type</th>
+            <th>amount</th>
+            <th>Date</th>
+         
+        </tr>
+    </thead>
+        <%
+        if(results.length!=0){
+        var i=1;
+        results.forEach(function(data){
+        %>
+        <tbody>
+        <tr>
+            <td><%=i %>.</td>
+            <td><%=data.account_no %></td>
+            <td><%=data.type%></td>
+            <td><%=data.amount %></td>
+            <td id="date"><%=data.date %></td>
+
+           
+        </tr>
+    </tbody>
+        <%  i++; }) %>
+        <% } else{ %>
+        <tbody>  <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        </tbody>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>

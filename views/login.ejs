@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>login</title>
+</head>
+<body>
+    <div class="main_box">
+      
+      
+
+        <form class="input_filed" action="/" method="POST">
+            <p class="error"><%= message %></p>
+
+            <p>Login Page</p>
+
+                <div class="id_input">
+                    <img src="icons/user.png">
+                    <input type="text" placeholder="Account Number" name="account_no" >
+                </div>
+
+                <div class="passsword_input">
+                    <img src="icons/pass.png" >
+                    <input type="password" placeholder="Password" name ="pin">
+                </div>
+
+    <button type="submit" class='btn-grad'>Login</button>
+
+                        <a href="/register" >New User? Register</a>
+                        
+
+                      
+        </form>
+        
+      
+    </div>
+    
+</body>
+</html>

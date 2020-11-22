@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pin-change.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+
+        <div class="li"> <li>   <a class="nav_links" href="/dashboard"> Home</a> </li>
+            <li>   <a class="nav_links" href="/">Logout </a></li>
+        </div>
+        
+    </nav>
+    
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" action="/pin-change">
+                        <p class="error"><%= message %></p>
+                        <h2 class="form-title">Account No : <%= account %>  </h2>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="new_pin"  placeholder="New Password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="renew_pin" placeholder="Re enter password"/>
+                        </div>
+                        <a class='button'href="/dashboard"> ✖</a>
+                    <button>✔</button>
+                        
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

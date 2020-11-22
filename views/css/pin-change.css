@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+nav{
+   display: flex;
+   color: black;
+   justify-content:flex-end;
+   height: 80px;
+   background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+   align-items:center;
+}
+
+
+
+
+.nav_links{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px;
+    margin: 0px 25px;
+}
+.li{
+display: flex;
+list-style: none;
+}
+.nav_links:hover{
+    color: rgb(47, 241, 209) ;
+    cursor: pointer;
+}
+body {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+   
+    
+     }
+  
+  .container {
+    
+    width: 660px;
+    position: relative;
+    margin: 150px auto; }
+    .signup-content {
+      
+        
+        background: #fff;
+        border-radius: 10px;
+        padding: 50px 85px; }
+      
+      .form-group {
+        overflow: hidden;
+        margin-bottom: 20px; }
+      
+      .form-input {
+        width: 100%;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+       
+        padding: 17px 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 500;
+        color: #222; }
+        
+        .form-input:focus {
+          border: 1px solid transparent;
+         
+          border-image-source: linear-gradient(to right, #9face6, #74ebd5);
+          
+          border-image-slice: 1;
+          border-radius: 5px;
+          
+          background-origin: border-box;
+          background-clip: content-box, border-box; }
+          .form-input:focus::-webkit-input-placeholder {
+            color: #222; }
+          .form-input:focus::-moz-placeholder {
+            color: #222; }
+          .form-input:focus:-ms-input-placeholder {
+            color: #222; }
+          .form-input:focus:-moz-placeholder {
+            color: #222; }
+            .form-title{
+                text-align: center;
+            }
+            button{
+                width:150px;
+                height: 45px;
+                font-size: 1.5rem;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            }
+            .button{
+              
+              padding: 8px 65px;
+              font-size: 1.5rem;
+              border: none;
+              text-decoration: none;
+              background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+              cursor: pointer;
+              border: none;
+              margin-right:5px ;
+          
+            }
+    .error{
+        text-align: center;
+        color: red;
+        font-weight: bold;
+    }
+    @media(max-width:680px){
+      .container{
+        width: fit-content;
+        
+      }
+      .signup-content{
+        margin: 5px;
+      }
+      button{
+        height: 35px; ;
+
+      }
+      .button{
+        padding: 3px 65px;
+
+
+      }
+    }
+      
+     
+        
