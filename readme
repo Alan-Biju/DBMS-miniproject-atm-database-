@@ -1,0 +1,30 @@
+to get started with it 
+step 1:
+
+downlod my code
+
+
+step 2:
+
+install xampp or any my sql sever based database(remotemysql free)
+
+
+step3:
+
+install node &npm
+
+
+step4:
+open the download code in any editor (vs code)
+
+
+step5:
+then type 'npm install'
+in the vs code terminal
+
+
+step6:
+after compliting type
+node app.js
+
+
