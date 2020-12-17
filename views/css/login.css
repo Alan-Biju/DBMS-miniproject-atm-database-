@@ -51,12 +51,13 @@ form {
 }
 
 form.sign-up-form {
-  margin-bottom: 150px;
+  
   opacity: 0;
   z-index: 1;
 }
 
 form.sign-in-form {
+
   z-index: 2;
 }
 
@@ -134,6 +135,7 @@ form.sign-in-form {
   left: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  
 }
 
 .container:before {
@@ -168,6 +170,7 @@ form.sign-in-form {
 .left-panel {
   pointer-events: all;
   padding: 3rem 17% 2rem 12%;
+  margin-bottom: 150px;
 }
 
 .right-panel {
@@ -255,6 +258,7 @@ form.sign-in-form {
     width: 100%;
     top: 95%;
     transform: translate(-50%, -100%);
+     margin-top:80px;
     
   }
 
