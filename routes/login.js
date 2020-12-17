@@ -1,4 +1,4 @@
-const { select } = require('async');
+
 const express = require('express');
 const { sqlconnection } = require('../database/mysql');
 const router = express.Router();
