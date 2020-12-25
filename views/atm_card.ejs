@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/atm_css.css">
+</head>
+<body>
+  <nav>
+
+    <div class="li"> <li>   <a class="nav_links" href="/dashboard"> Home</a> </li>
+        <li>   <a class="nav_links" href="/">Logout </a></li>
+    </div>
+  
+</nav>
+
+<div class="card">
+  <div class="card__front card__part">
+    <img class="card__front-square card__square" src="https://image.ibb.co/cZeFjx/little_square.png">
+    <img class="card__front-logo card__logo" src="https://img.icons8.com/ios-filled/50/ffffff/hummingbird.png"/>
+    <p class="card_numer"><%= account %> </p>
+    <div class="card__space-75">
+      <span class="card__label">Card holder</span>
+      <p class="card__info"><%= name %> </p>
+    </div>
+    <div class="card__space-25">
+      <span class="card__label">Expires</span>
+            <p class="card__info">10/25</p>
+    </div>
+  </div>
+  
+  <div class="card__back card__part">
+    <div class="card__black-line"></div>
+    <div class="card__back-content">
+      <div class="card__secret">
+        <p class="card__secret--last">420</p>
+      </div>
+      <img class="card__back-square card__square" src="https://image.ibb.co/cZeFjx/little_square.png">
+      <img class="card__back-logo card__logo" src="https://img.icons8.com/ios-filled/50/ffffff/hummingbird.png">
+      
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
