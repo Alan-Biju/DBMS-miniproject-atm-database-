@@ -19,6 +19,7 @@ const transactionsrouter = require('./routes/transactions');
 const pinchangerouter = require('./routes/pinchange');
 const atm_cardrouter = require('./routes/atm_card');
 const contactrouter = require('./routes/contact_us')
+const transferrouter = require('./routes/transfer');
 ////---------------------------------------------------------
 const app = express();
 app.use(cookieParser());
@@ -66,6 +67,8 @@ app.use('/', transactionsrouter);
 app.use('/', pinchangerouter);
 app.use('/',atm_cardrouter );
 app.use('/',contactrouter );
+app.use('/',transferrouter );
+
 
 ////-----------------------------------------------------
 
