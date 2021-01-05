@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <div><p>Welcome <%= name %>  </p></div>
+        <div><p>Welcome <%= name %> </p></div>
         <div class="li"> <li>   <a class="nav_links" href="/dashboard"> Home</a> </li>
             <li>   <a class="nav_links" href="/">Logout </a></li>
         </div>
@@ -20,7 +20,7 @@
        <div class="inside_box">
       <div class='b-w'> 
           <div class="balance">
-            <p class="cash"><%= balance %>   ₹</p>
+            <p class="cash"><%= balance %> ₹</p>
             <p class="name">balance</p>
             
         </div>
@@ -50,14 +50,18 @@
             <a  class="mid"  href="/card">  <div class="pin_change">
              <p>Debit Card</p>
          </div></a>
+         
              <a class="mid"  href="/feedback"> <div class="contact">
                  <p>Enquiry</p>
  
               </div></a>
           </div>
-        
-         
+       <a href="/transfer"><div class="pass">
+        <p>Transfer</p>
+    </div>
+     </a> 
        </div>
+       
    </div>
 </body>
 </html>
