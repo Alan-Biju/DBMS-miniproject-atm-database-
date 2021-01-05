@@ -22,7 +22,7 @@ router.post('/transfer',(req, res)=>{
                     const rec_balance=eval(balance+amount);
                    sqlconnection.query(`UPDATE balance SET balance =${rec_balance} WHERE account_no =${account}`,(error,results)=>{
                        if(!error){
-                            sqlconnection.query(`INSERT INTO deposit(account_no,type,amount) VALUES(${account},'Received',${rec_balance})`,(error,results)=>{
+                            sqlconnection.query(`INSERT INTO deposit(account_no,type,amount) VALUES(${account},'Received',${amount})`,(error,results)=>{
                                 if(!error){
                                     console.log("deposit enterd")
                                 }
