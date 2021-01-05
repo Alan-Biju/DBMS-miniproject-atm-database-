@@ -14,7 +14,7 @@ router.get('/account',(req, res)=>{
             res.redirect('/dashboard');
         }
         else{
-            res.render('account',{name:results[0].name,account:results[0].account_id,password:results[0].pin,email:results[0].email,address:results[0].address});
+            res.render('account',{name:results[0].name,account:results[0].account_id,password:results[0].pin,email:results[0].email,address:results[0].address,phone:results[0].phone,Dob:results[0].birth});
           }
     });
     

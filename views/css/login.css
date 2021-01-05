@@ -248,6 +248,12 @@ form.sign-in-form {
 .container.sign-up-mode .right-panel {
   pointer-events: all;
 }
+.error{
+  color:red;
+  font-size:0.9rem;
+  font-weight:bold;
+  letter-spacing: 1px;
+}
 
 @media (max-width: 870px) {
   .container {
@@ -258,7 +264,7 @@ form.sign-in-form {
     width: 100%;
     top: 95%;
     transform: translate(-50%, -100%);
-     margin-top:80px;
+    margin-top:80px;
     
   }
 
