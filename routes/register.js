@@ -25,9 +25,9 @@ router.post('/register',function (req, res){
 
     }
     else{
-    var card=  'INSERT INTO card(account_no,pin) VALUES(?,?)';
+    var card=  'INSERT INTO card(account_no,pin,CVV) VALUES(?,?,?)';
     var details='INSERT INTO details(name,account_id,pin,address,email,phone,birth) VALUES (?,?,?,?,?,?,?)';
-     sqlconnection.query(card,[account,password],(error,results,fileds)=>{
+     sqlconnection.query(card,[account,password,Math.floor(Math.random()*(999-100+1)+100)],(error,results,fileds)=>{
         if(!error){
             console.log("card inserted");
             sqlconnection.query(details,[name,account,password,address,email,phone,dob],(error,results,fields)=>{
