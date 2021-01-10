@@ -1,10 +1,11 @@
 const express=require('express');
 const router = express.Router();
 const { sqlconnection } = require('../database/mysql');
+const {time,date}=require('../routes/time');
 
+//----------------------------------------------------------------
 
-
-
+//-----------------------------------------
 router.get('/withdrawl',function(req, res){
     res.render('withdrawl',{message:req.flash('error')});
 });
@@ -25,7 +26,7 @@ sqlconnection.query(`UPDATE balance SET balance = ${final_balance} WHERE account
         res.redirect('dashboard');
     }
     else{
-        sqlconnection.query(`INSERT INTO withdrawal(account_no,amount) VALUES(?,?)`,[req.cookies.account,balance_withdrawl],(error,results)=>{
+        sqlconnection.query(`INSERT INTO withdrawal(account_no,amount,date,time) VALUES(?,?,?,?)`,[req.cookies.account,balance_withdrawl,date,time],(error,results)=>{
             if(!error){
                 console.log("withdrawal updated");
             }
