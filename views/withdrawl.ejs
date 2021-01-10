@@ -22,7 +22,7 @@
     <p class="error"><%= message %></p>
             <div class="amount_area">
                 <div class="text_zone">Enter Your Withdrawl Amount </div>
-                <div class="amount_zone"><input class="input--style-5" type="number"  placeholder='Enter Your Amount ' name="withdrawl"><span>₹</span></div>
+                <div class="amount_zone"><input class="input--style-5" type="number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" placeholder='Enter Your Amount ' name="withdrawl"><span>₹</span></div>
             </div>
             <div class="button_area">
                     <a class='button'href="/dashboard"><<</a>
