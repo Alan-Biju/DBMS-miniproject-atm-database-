@@ -1,6 +1,10 @@
 const express=require('express');
 const router = express.Router();
 const { sqlconnection } = require('../database/mysql');
+const {time,date}=require('../routes/time');
+///------------------------------------------------
+
+  //-----------------------------------
 
 
 router.get('/deposit',function (req, res){
@@ -22,7 +26,7 @@ router.post('/deposit',function (req, res){
         res.redirect('deposit');
         }
         else{
-            sqlconnection.query(`INSERT INTO deposit(account_no,amount) VALUES(?,?)`,[req.cookies.account,deposit_value],(error,results)=>{
+            sqlconnection.query(`INSERT INTO deposit(account_no,amount,date,time) VALUES(?,?,?,?)`,[req.cookies.account,deposit_value,date,time],(error,results)=>{
                 if(!error){
                     console.log("deposit updated");
                 }
