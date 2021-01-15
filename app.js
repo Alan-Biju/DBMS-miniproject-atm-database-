@@ -70,8 +70,10 @@ app.use('/',contactrouter );
 app.use('/',transferrouter );
 
 
-////-----------------------------------------------------
-
+/////error 404 -------------------------------------------------
+app.use((req,res)=>{
+  res.render("404");
+});
 ///port-----------------------------
 var port = process.env.PORT || 3000;
 app.listen(port, function (err) {
