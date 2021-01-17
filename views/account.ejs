@@ -8,6 +8,7 @@
     <title>Account</title>
 </head>
 <body>
+    <div class="blur">
     <nav>
 
         <div class="li"> <li>   <a class="nav_links" href="/dashboard"> Home</a> </li>
@@ -81,20 +82,44 @@
                             </div>
                         </div>
                       
-                       
+                   <div class="button "><button type="button">Delete Your Account</button></div>
                         
                             
                         </div>
                     </form>
+
+
                 </div>
             </div>
         </div>
    
 
 
+    </div>
+
+<div class="del-box none">
+   <div class="ptext"> <p>Your Account Will be deleted permanently no backup is provided </p>
+    <P>Are You Sure  ? </P></div>
+    <div class="btn">
+     <a href="/account"> <button class='green' > < back </button></a>
+        <a href="/delete"><button class='red'> Yes I am Sure </button></a>
+    </div>
+
 
 </div>
+<script>
+  const button=document.querySelector('.button');
+  const box=document.querySelector('.del-box');
+  const main_box=document.querySelector('.blur');
+ 
+  button.addEventListener('click',()=>{
+    box.classList.add('pop');
+main_box.style.filter='blur(8px)';
+main_box.style.pointer ='none';
 
-    
+  });
+  
+
+</script>    
 </body>
 </html>
