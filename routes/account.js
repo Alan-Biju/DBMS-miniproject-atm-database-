@@ -19,7 +19,17 @@ router.get('/account',(req, res)=>{
     });
     
 });
-
+router.get('/delete',(req, res)=>{
+    sqlconnection.query(`DELETE FROM card WHERE account_no=${req.cookies.account}`,(err,results)=>{
+        if(!err){
+            res.redirect('/');
+        }
+        else{
+            console.log('error'+err)
+            res.redirect('/account');
+        }
+    });
+});
 
 
 
