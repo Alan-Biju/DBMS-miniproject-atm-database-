@@ -16,27 +16,29 @@ router.post('/withdrawl',function (req,res){
     var final_balance=main_balance-balance_withdrawl;
 if(main_balance==0||final_balance<0){
     req.flash('error','Insufficient Balance');
-    res.redirect('withdrawl');
+    res.redirect('/withdrawl');
 }
 else{
  
-sqlconnection.query(`UPDATE balance SET balance = ${final_balance} WHERE account_no = ${req.cookies.account}`,(error,results,fields)=>{
+sqlconnection.query(`UPDATE balance SET balance = ${final_balance} WHERE account_no = ${req.cookies.account}`,(error,results)=>{
     if(error){
         console.log("somthing worng with balance table"+error);
-        res.redirect('dashboard');
+        res.redirect('/dashboard');
     }
     else{
         sqlconnection.query(`INSERT INTO withdrawal(account_no,amount,date,time) VALUES(?,?,?,?)`,[req.cookies.account,balance_withdrawl,date,time],(error,results)=>{
             if(!error){
                 console.log("withdrawal updated");
+                res.clearCookie('balance');
+                res.cookie('balance',final_balance);
+                req.flash('error',`${balance_withdrawl} ₹ debited  Successful `);
+                res.redirect('/withdrawl');
             }
             else{
                 console.log("withdrawal error"+error);
             }
         });
-       res.clearCookie('balance');
-        res.cookie('balance',final_balance);
-        res.redirect('withdrawl');
+      
     }
 });
 }
