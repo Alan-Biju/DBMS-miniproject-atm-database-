@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dash.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <nav>
+        <div><p>Welcome <%= name %> </p></div>
+        <div class="li"> <li>   <a class="nav_links" href="/dashboard"> Home</a> </li>
+            <li>   <a class="nav_links" href="/">Logout </a></li>
+        </div>
+       
+    </nav>
+   <div class="main_box">
+       <div class="inside_box">
+      <div class='b-w'> 
+          <div class="balance">
+            <p class="cash"><%= balance %> ₹</p>
+            <p class="name">balance</p>
+            
+        </div>
+      <a class="mid" href="/withdrawl">  <div class="transfer">
+        <p class="tf">Withdrawal </p>
+     </div></a>
+    </div>
+    
+         <div class="min_box1">
+           <a class="mid" href="/account">  <div class="account">
+            <p>Account</p>
+        </div></a>
+             <a class="mid" href="/deposit"><div class="Deposit">
+                <p>Deposit</p>
+            </div></a>
+         </div>
+         <div class="mid_box2">
+           <a  class="mid"  href="/pin-change">  <div class="pin_change">
+            <p>Pin Change</p>
+        </div></a>
+            <a class="mid"  href="/transactions"> <div class="contact">
+                <p>Transactions</p>
+
+             </div></a>
+         </div>
+         <div class="mid_box2">
+            <a  class="mid"  href="/card">  <div class="pin_change">
+             <p>Debit Card</p>
+         </div></a>
+         
+             <a class="mid"  href="/feedback"> <div class="contact">
+                 <p>Enquiry</p>
+ 
+              </div></a>
+          </div>
+       <a href="/transfer"><div class="pass">
+        <p>Transfer</p>
+    </div>
+     </a> 
+       </div>
+       
+   </div>
+</body>
+</html>
