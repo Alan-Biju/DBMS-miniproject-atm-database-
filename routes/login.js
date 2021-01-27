@@ -3,6 +3,9 @@ const express = require('express');
 const { sqlconnection } = require('../database/mysql');
 const router = express.Router();
 
+
+
+
 router.get('/', function (req, res) {
   res.clearCookie('account');
   res.clearCookie('name');
@@ -27,7 +30,7 @@ router.post('/', function (req, res) {
       ' and pin=' +
       pin +
       ';';
-    sqlconnection.query(loginquery, (err, results, fileds) => {
+    sqlconnection.query(loginquery, (err, results) => {
       if (err || results.length == 0) {
         console.log('no data got returned from database ' + err);
         req.flash(

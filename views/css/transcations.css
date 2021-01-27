@@ -35,8 +35,6 @@ list-style: none;
 }
 
 
-/* Table Styles */
-
 .table-wrapper{
     margin: 10px 70px 70px;
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
@@ -136,8 +134,8 @@ button {
 
  }
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
+ .button:hover {
+   background-position: right center; 
    color: #fff;
    text-decoration: none;
  }

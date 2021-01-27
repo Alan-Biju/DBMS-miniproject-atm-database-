@@ -23,6 +23,7 @@
                     <h2 class="title">Enter Bank Details</h2>
                 </div>
                 <div class="card-body">
+                    <p class="error"><%= error %> </p>
                     <form method="POST" action="/transfer">
                         <div class="form-row">
                             <div class="name">Account Number</div>
@@ -52,7 +53,7 @@
                             <div class="name">Enter Amount</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" name='amount'required>
+                                    <input class="input--style-5" type="number"   name='amount'required>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +61,7 @@
                             <button >Send</button>
                             
                             </div>
-                            <p class="error"><%= error %> </p>
+                           
                         
                    </div>
                   

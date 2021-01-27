@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express();
 const { sqlconnection } = require('../database/mysql');
-
+const {time,date}=require('../routes/time');
 //-------------------------------
-const {time,date,today}=require('../routes/time');
+
 
 
 //------------------------------
@@ -82,7 +82,7 @@ router.post('/transfer',(req, res)=>{
 
     }
     else{
-        res.render('transfer',{error:"account no does not match"});
+        res.render('transfer',{error:"Account no does not match"});
     }
 });
 

@@ -13,7 +13,6 @@ router.post('/feedback', (req,res)=>{
     const email=req.body.email;
     const phone=req.body.phone;
     const message=req.body.message;
-    console.log(name,email,phone,message);
     const query=`INSERT INTO feedback(account_id,name,email,phone,message) VALUES(${req.cookies.account},'${name}','${email}',${phone},'${message}');`;
     sqlconnection.query(query,(error,results)=>{
         if(!error){

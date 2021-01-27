@@ -34,24 +34,8 @@ list-style: none;
     cursor: pointer;
 }
 
-/* ==========================================================================
-   #FONT
-   ========================================================================== */
-   .font-robo {
-    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  }
+
   
-  .font-poppins {
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-  }
-  
-  .font-opensans {
-    font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
-  }
-  
-  /* ==========================================================================
-     #GRID
-     ========================================================================== */
   
   
   @media (max-width: 767px) {
@@ -101,101 +85,9 @@ list-style: none;
     }
   }
   
-  .col-3,
-  .col-9 {
-    padding: 0 15px;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-  }
   
   
-  @media (max-width: 767px) {
-    .col-3 {
-     
-      flex: 0 0 35%;
-      max-width: 35%;
-    }
-  }
-  
-  .col-9 {
-   
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  
-  @media (max-width: 767px) {
-    .col-9 {
-     
-      flex: 0 0 65%;
-      max-width: 65%;
-    }
-  }
-  
-  /* ==========================================================================
-     #BOX-SIZING
-     ========================================================================== */
-  /**
-   * More sensible default box-sizing:
-   * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-   */
-  html {
-    
-    box-sizing: border-box;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  *, *:before, *:after {
-    
-    box-sizing: inherit;
-  }
-  
-  /* ==========================================================================
-     #RESET
-     ========================================================================== */
-  /**
-   * A very simple reset that sits on top of Normalize.css.
-   */
-  body,
-  h1, h2, h3, h4, h5, h6,
-  blockquote, p, pre,
-  dl, dd, ol, ul,
-  figure,
-  hr,
-  fieldset, legend {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /**
-   * Remove trailing margins from nested lists.
-   */
-  li > ol,
-  li > ul {
-    margin-bottom: 0;
-  }
-  
-  /**
-   * Remove default table spacing.
-   */
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
-  /**
-   * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
-   *    on fieldsets.
-   */
-  
-  
-  /* ==========================================================================
-     #PAGE WRAPPER
-     ========================================================================== */
+ 
   .page-wrapper {
     min-height: 100vh;
   }
@@ -206,98 +98,30 @@ list-style: none;
     font-size: 14px;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+   h2  {
     font-weight: 400;
-  }
-  
-  h1 {
-    font-size: 36px;
-  }
-  
-  h2 {
     font-size: 30px;
+
   }
   
-  h3 {
-    font-size: 24px;
-  }
   
-  h4 {
-    font-size: 18px;
-  }
   
-  h5 {
-    font-size: 15px;
-  }
+ 
   
-  h6 {
-    font-size: 13px;
-  }
-  
-  /* ==========================================================================
-     #BACKGROUND
-     ========================================================================== */
-  .bg-blue {
-    background: #2c6ed5;
-  }
-  
-  .bg-red {
-    background: #fa4251;
-  }
-  
-  .bg-gra-01 {
-   
-    background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
-  }
-  
-  .bg-gra-02 {
-   
-    background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
-  }
   
   .bg-gra-03 {
    
     background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
   }
   
-  /* ==========================================================================
-     #SPACING
-     ========================================================================== */
-  .p-t-100 {
-    padding-top: 100px;
-  }
   
-  .p-t-130 {
-    padding-top: 130px;
-  }
   
-  .p-t-180 {
-    padding-top: 180px;
-  }
   
   .p-t-45 {
     padding-top: 45px;
   }
   
-  .p-t-20 {
-    padding-top: 20px;
-  }
   
-  .p-t-15 {
-    padding-top: 15px;
-  }
-  
-  .p-t-10 {
-    padding-top: 10px;
-  }
-  
-  .p-t-30 {
-    padding-top: 30px;
-  }
-  
-  .p-b-100 {
-    padding-bottom: 100px;
-  }
   
   .p-b-50 {
     padding-bottom: 50px;
@@ -307,43 +131,15 @@ list-style: none;
     margin-right: 45px;
   }
   
-  .m-r-55 {
-    margin-right: 55px;
-  }
-  
-  .m-b-55 {
-    margin-bottom: 55px;
-  }
-  
-  /* ==========================================================================
-     #WRAPPER
-     ========================================================================== */
   .wrapper {
     margin: 0 auto;
-  }
-  
-  .wrapper--w960 {
-    max-width: 960px;
   }
   
   .wrapper--w790 {
     max-width: 790px;
   }
+ 
   
-  .wrapper--w780 {
-    max-width: 780px;
-  }
-  
-  .wrapper--w680 {
-    max-width: 680px;
-  }
-  
-  
-  
-  
-  /* ==========================================================================
-     #FORM
-     ========================================================================== */
   input {
     outline: none;
     margin: 0;
@@ -354,8 +150,6 @@ list-style: none;
     font-family: inherit;
    
   }
-  
-  
   input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -363,6 +157,8 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+  
+  
   
   
   
@@ -377,28 +173,15 @@ input[type=number]::-webkit-outer-spin-button {
     color: #555;
   }
   
-  .input-group-desc {
-    position: relative;
-  }
+ 
   
-  @media (max-width: 767px) {
-    .input-group-desc {
-      margin-bottom: 40px;
-    }
-  }
   
   .input-group {
     position: relative;
     margin: 0;
   }
   
-  
-  
-  
-  
-  /* ==========================================================================
-     #TITLE
-     ========================================================================== */
+ 
   .title {
     font-size: 24px;
     text-transform: uppercase;
@@ -406,10 +189,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     color: #fff;
   }
-  
-  /* ==========================================================================
-     #CARD
-     ========================================================================== */
+ 
   .card {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -482,11 +262,11 @@ button {
  }
  .error{
     color: rgb(212, 41, 41);
-   
+   font-weight: bold;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px;
-    
+  
   
 
 }

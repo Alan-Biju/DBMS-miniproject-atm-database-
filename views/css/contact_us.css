@@ -1,14 +1,8 @@
-
-
-
-
-
-
 * {
 	margin: 0px; 
 	padding: 0px; 
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 nav {
   display: flex;
@@ -48,12 +42,12 @@ p {
 }
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Bold, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Bold;
+  font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -70,12 +64,9 @@ a:hover {
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
-}
 
 p {
-	font-family: Ubuntu-Bold;
+  font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -122,9 +113,6 @@ button:hover {
 	cursor: pointer;
 }
 
-iframe {
-	border: none !important;
-}
 
 
 /*---------------------------------------------*/
@@ -135,8 +123,6 @@ iframe {
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ Contact ]*/
 
 .container-contact100 {
   width: 100%;  
@@ -161,9 +147,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-/*==================================================================
-[ Form ]*/
-
 .contact100-form {
   width: 100%;
   
@@ -171,7 +154,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .contact100-form-title {
   display: block;
-  font-family: Ubuntu-Bold;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   color: #403866;
   line-height: 1.2;
@@ -180,8 +163,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding-bottom: 49px;
 }
 
-/*------------------------------------------------------------------
-[ Input ]*/
 
 .wrap-input100 {
   width: 100%;
@@ -198,7 +179,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   width: 100%;
   background: #fff;
   border-radius: 31px;
-  font-family: Ubuntu-Bold;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #8f8fa1;
   line-height: 1.2;
@@ -263,7 +244,7 @@ textarea.input100 {
   background-color: transparent;
   border-radius: 31px;
 
-  font-family: Ubuntu-Bold;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -309,56 +290,4 @@ textarea.input100 {
   position: relative;
 }
 
-.alert-validate::before {
-  content: attr(data-validate);
-  position: absolute;
-  z-index: 1000;
-  max-width: 70%;
-  background-color: #fff;
-  border: 1px solid #c80000;
-  border-radius: 14px;
-  padding: 4px 25px 4px 10px;
-  top: 50%;
-  
-  transform: translateY(-50%);
-  right: 10px;
-  pointer-events: none;
 
-  font-family: Ubuntu-Bold;
-  color: #c80000;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: left;
-
-  visibility: hidden;
-  opacity: 0;
-
- 
-  transition: opacity 0.4s;
-}
-
-.alert-validate::after {
-  content: "\f06a";
-  font-family: FontAwesome;
-  display: block;
-  position: absolute;
-  z-index: 1100;
-  color: #c80000;
-  font-size: 16px;
-  top: 50%;
- 
-  transform: translateY(-50%);
-  right: 16px;
-}
-
-.alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
-}
