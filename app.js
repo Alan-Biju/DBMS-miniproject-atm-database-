@@ -18,8 +18,11 @@ const depositrouter = require('./routes/deposit');
 const transactionsrouter = require('./routes/transactions');
 const pinchangerouter = require('./routes/pinchange');
 const atm_cardrouter = require('./routes/atm_card');
-const contactrouter = require('./routes/contact_us')
+const contactrouter = require('./routes/contact_us');
 const transferrouter = require('./routes/transfer');
+const updaterouter = require('./routes/updatepage');
+
+
 ////---------------------------------------------------------
 const app = express();
 app.use(cookieParser());
@@ -53,7 +56,7 @@ app.use(
 
 ///MYsql-----------------------------------------------------
 const { database, sqlconnection } = require('./database/mysql.js');
-console.log(database);
+
 ///-----------------------------------------------------------
 
 ////routes------------------------------------------------
@@ -65,20 +68,20 @@ app.use('/', withdrawlrouter);
 app.use('/', depositrouter);
 app.use('/', transactionsrouter);
 app.use('/', pinchangerouter);
-app.use('/',atm_cardrouter );
-app.use('/',contactrouter );
-app.use('/',transferrouter );
+app.use('/', atm_cardrouter);
+app.use('/', contactrouter);
+app.use('/', transferrouter);
+app.use('/',updaterouter);
 
-
-/////error 404 -------------------------------------------------
-app.use((req,res)=>{
-  res.render("404");
+////error 404 -------------------------------------------------
+app.use((req, res) => {
+  res.render('404');
 });
 ///port-----------------------------
 var port = process.env.PORT || 3000;
 app.listen(port, function (err) {
   if (!err) {
-    console.log(`port in running in ${port}`);
+    console.log(`port is running in ${port}`);
   }
 });
 //---------------------------------------
