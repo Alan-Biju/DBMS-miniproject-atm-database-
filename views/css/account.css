@@ -38,6 +38,13 @@ nav {
   justify-content: space-between;
   
 }
+@media(max-width:600px){
+  .btt_middle {
+    flex-direction: column;
+            white-space: nowrap;
+
+  }
+}
 .greenn {
   background-image: linear-gradient(
     to right,
